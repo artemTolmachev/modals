@@ -1,0 +1,55 @@
+.content{
+	padding: 17px 0;
+    background-color: #03a9f438;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+	width: 100%;
+}
+
+.btn {
+	border: none;
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	width: 50px;
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal {
+	background-color: #fff;
+	width: 499px;
+    height: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+	display: block;
+}
